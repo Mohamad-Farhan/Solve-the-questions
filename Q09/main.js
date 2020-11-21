@@ -8,9 +8,18 @@ Write a function that returns the length of the longest sequence of 1s in an arr
 
 function longestSequence() {
   // YOUR CODE HERE
+  if (arguments[0].filter((e) => e === 1).length === 0) {
+    return 'Iam not here ';
+  } else {
+    const jojo = arguments[0].join('').split('0');
+    jojo.sort();
+    const jj = jojo.pop().length;
+    return jj;
+  }
+
 }
 
-/* 
+/*
 Examples:
 longestSequence([0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1]) // => 4
 longestSequence([1, 1, 0, 1, 1, 0, 1, 0, 1, 1]) // => 2

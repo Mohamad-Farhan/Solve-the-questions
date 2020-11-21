@@ -8,7 +8,6 @@ Write a function that returns the number of unique items in an array.
 
 function uniqueItems() {
   // YOUR CODE HERE
-  const uniqe = uniqe.filter((v, i, a) => a.indexOf(v) === i);
 }
 
 /*
